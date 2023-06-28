@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  height: 600px;
+}
+
+.pads-div-1, .pads-div-2 {
+  display: flex;
+  gap: 10px;
+}
+
+.pad-style-1, .pad-style-2,
+.pad-style-3, .pad-style-4,
+.pad-style-5, .pad-style-6, 
+.pad-style-7, .pad-style-8 {
+  padding: 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+.pad-style-1:hover {
+  background-color: gray;
+}
+
+.pad-style-2:hover {
+  background-color: darkred;
+}
+
+.pad-style-3:hover {
+  background-color: lightgreen;
+}
+
+.pad-style-4:hover {
+  background-color: darkgoldenrod;
+}
+
+.pad-style-5:hover {
+  background-color: lightcoral;
+}
+
+.pad-style-6:hover {
+  background-color: darkolivegreen;
+}
+
+.pad-style-7:hover {
+  background-color: lightskyblue;
+}
+
+.pad-style-8:hover {
+  background-color: gray;
+}
