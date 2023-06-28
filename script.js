@@ -1,8 +1,15 @@
 const soundMap = {
-  kickButton: 'kick.wav',
-  snareButton: 'snare.wav',
-  hihatButton: 'hihat.wav'
+  // pads line 1
+  kickButton: 'kick.mp3',
+  snareButton: 'snare.mp3',
+  hatButton: 'hat.mp3',
+  openhatButton: 'openhat.mp3',
 
+  // pads line 2
+  button808: '808.mp3',
+  clapButton: 'clap.mp3',
+  congaButton: 'conga.mp3',
+  metalshakeButton: 'metal-shake.mp3'
 }
 
 function playSound(event) {
