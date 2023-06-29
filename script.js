@@ -64,10 +64,10 @@ document.addEventListener('keyup', function(event) {
       button.classList.remove(`active-${buttonId}`);
     }
   }
-})
+});
 
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
   button.addEventListener('click', playSound);
-})
+});
