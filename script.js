@@ -16,12 +16,12 @@ const keyMap = {
   // pads line 1 
   'q': 'kickButton',
   'w': 'snareButton',
-  'e': 'hatButton',
-  'r': 'openhatButton',
+  'o': 'hatButton',
+  'p': 'openhatButton',
 
   // pads line 2
-  'h': 'button808',
-  'j': 'clapButton',
+  'a': 'button808',
+  's': 'clapButton',
   'k': 'congaButton',
   'l': 'metalshakeButton'
 }
