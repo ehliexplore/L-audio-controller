@@ -24,34 +24,34 @@ body {
   border-radius: 10px;
 }
 
-.pad-style-1:hover {
+.pad-style-1:hover, .active-kickButton {
   background-color: gray;
 }
 
-.pad-style-2:hover {
+.pad-style-2:hover, .active-snareButton {
   background-color: darkred;
 }
 
-.pad-style-3:hover {
+.pad-style-3:hover, .active-hatButton {
   background-color: lightgreen;
 }
 
-.pad-style-4:hover {
+.pad-style-4:hover, .active-openhatButton {
   background-color: darkgoldenrod;
 }
 
-.pad-style-5:hover {
+.pad-style-5:hover, .active-button808 {
   background-color: lightcoral;
 }
 
-.pad-style-6:hover {
+.pad-style-6:hover, .active-clapButton {
   background-color: darkolivegreen;
 }
 
-.pad-style-7:hover {
+.pad-style-7:hover, .active-congaButton {
   background-color: lightskyblue;
 }
 
-.pad-style-8:hover {
+.pad-style-8:hover, .active-metalshakeButton {
   background-color: gray;
 }
