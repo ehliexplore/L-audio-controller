@@ -55,3 +55,46 @@ body {
 .pad-style-8:hover, .active-metalshakeButton {
   background-color: gray;
 }
+
+
+.melody-div {
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.melody-button-style, 
+.melody-button-style-first,
+.melody-button-style-last,
+.melody-button-style-penultimate,
+.melody-button-style-second,
+.melody-button-style-center {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.melody-button-style-first {
+  position: relative;
+  bottom: 150px;
+}
+
+.melody-button-style-last {
+  position: relative;
+  bottom: 150px;
+}
+
+.melody-button-style-second {
+  position: relative;
+  bottom: 50px;
+}
+
+.melody-button-style-penultimate {
+  position: relative;
+  bottom: 50px;
+}
+
+.melody-button-style-center {
+  position: relative;
+  top: 50px;
+}
