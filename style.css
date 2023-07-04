@@ -72,6 +72,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50px;
+  border: none;
 }
 
 .melody-button-style-first {
@@ -97,4 +98,11 @@ body {
 .melody-button-style-center {
   position: relative;
   top: 50px;
+}
+
+.active-doButton, .active-reButton,
+.active-miButton, .active-faButton,
+.active-solButton, .active-laButton,
+.active-siButton {
+  background-color: darkred;
 }

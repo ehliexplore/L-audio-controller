@@ -9,7 +9,16 @@ const soundMap = {
   button808: '808.mp3',
   clapButton: 'clap.mp3',
   congaButton: 'conga.mp3',
-  metalshakeButton: 'metal-shake.mp3'
+  metalshakeButton: 'metal-shake.mp3',
+
+  // melody 
+  doButton: 'c.mp3',
+  reButton: 'd.mp3',
+  miButton: 'e.mp3',
+  faButton: 'f.mp3',
+  solButton: 'g.mp3',
+  laButton: 'a.mp3',
+  siButton: 'b.mp3'
 }
 
 const keyMap = {
@@ -23,7 +32,16 @@ const keyMap = {
   'a': 'button808',
   's': 'clapButton',
   'k': 'congaButton',
-  'l': 'metalshakeButton'
+  'l': 'metalshakeButton',
+
+  // melody 
+  'z': 'doButton',
+  'x': 'reButton',
+  'c': 'miButton',
+  'v': 'faButton',
+  'b': 'solButton',
+  'n': 'laButton',
+  'm': 'siButton'
 }
 
 function playSound(event) {
