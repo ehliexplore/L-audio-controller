@@ -93,12 +93,19 @@ buttons.forEach((button) => {
 
 // config
 
+
 function showConfig() {
   cleanMain();
 
-  const backButton = document.querySelector('.js-back').innerHTML = '<button onclick="backMain()">Back</button>';
+  const doneButton = document.querySelector('.js-done').innerHTML = '<button class="done-button-style" onclick="backMain()">Done</button>';
 
-  const configContent = document.querySelector('.js-config').innerHTML = `<button onclick="changeTheme()">change theme</button>`;
+  if (document.body.style.backgroundColor === 'lightgray') {
+    document.querySelector('.js-config').innerHTML = `
+    <button class="change-theme" onclick="changeTheme()">Dark theme</button>`;
+  } else {
+    document.querySelector('.js-config').innerHTML = `
+    <button class="change-theme" onclick="changeTheme()">Light theme</button>`;
+  }
 
 };
 
@@ -109,20 +116,24 @@ function cleanMain() {
 function changeTheme() {
   if (document.body.style.backgroundColor === 'lightgray') {
     document.body.style.backgroundColor = 'black';
+    document.querySelector('.js-config').innerHTML = `
+    <button onclick="changeTheme()">Light theme</button>`;
     
   } else {
     document.body.style.backgroundColor = 'lightgray';
+    document.querySelector('.js-config').innerHTML = `
+    <button onclick="changeTheme()">Dark theme</button>`;
     
   }
 };
 
 function backMain() { 
   document.querySelector('.js-config').innerHTML = '';
-  document.querySelector('.js-back').innerHTML = '';
+  document.querySelector('.js-done').innerHTML = '';
 
   document.querySelector('.js-main').innerHTML = `
   <main class="main-style js-main">
-  <button class="config-button" onclick="showConfig()">Configurações</button>
+  <button class="config-button" onclick="showConfig()">Settings</button>
 
   <div class="pads-div-1">
     <button id="kickButton" class="pad-style-1"></button>
@@ -148,7 +159,7 @@ function backMain() {
   </div>
 </main>
 
-<div class="js-back"></div>
+<div class="js-done done-button-div"></div>
 <div class="config-content js-config"></div>
   `;
 

@@ -33,9 +33,19 @@ body, .main-style {
   cursor: pointer;
 }
 
-.config-button:hover {
-  color: lightslategray;
+.back-button-div {
+ 
 }
+
+.back-button-style {
+  
+
+}
+
+.config-button:hover, .back-button-style:hover {
+  color: white;
+}
+
 
 .pad-style-1, .pad-style-2,
 .pad-style-3, .pad-style-4,
@@ -136,4 +146,8 @@ body, .main-style {
 .active-solButton, .active-laButton,
 .active-siButton {
   background-color: darkred;
+}
+
+.config-content {
+  margin-bottom: 0px;
 }
