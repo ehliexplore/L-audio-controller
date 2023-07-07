@@ -7,29 +7,36 @@
   <link rel="stylesheet" href="style.css">
   <title>L Audio</title>
 </head>
-<body>
-  <div class="pads-div-1">
-    <button id="kickButton" class="pad-style-1"></button>
-    <button id="snareButton" class="pad-style-2"></button>
-    <button id="hatButton" class="pad-style-3"></button>
-    <button id="openhatButton" class="pad-style-4"></button>
-  </div>
-  <div class="pads-div-2">
-    <button id="button808" class="pad-style-5"></button>
-    <button id="clapButton" class="pad-style-6"></button>
-    <button id="congaButton" class="pad-style-7"></button>
-    <button id="metalshakeButton" class="pad-style-8"></button>
-  </div>
+<body class="js-body">
+  <main class="main-style js-main">
+    <button class="config-button" onclick="showConfig()">Configurações</button>
+  
+    <div class="pads-div-1">
+      <button id="kickButton" class="pad-style-1"></button>
+      <button id="snareButton" class="pad-style-2"></button>
+      <button id="hatButton" class="pad-style-3"></button>
+      <button id="openhatButton" class="pad-style-4"></button>
+    </div>
+    <div class="pads-div-2">
+      <button id="button808" class="pad-style-5"></button>
+      <button id="clapButton" class="pad-style-6"></button>
+      <button id="congaButton" class="pad-style-7"></button>
+      <button id="metalshakeButton" class="pad-style-8"></button>
+    </div>
+  
+    <div class="melody-div">
+      <button id="doButton" class="melody-button-style-first"></button>
+      <button id="reButton" class="melody-button-style-second"></button>
+      <button id="miButton" class="melody-button-style"></button>
+      <button id="faButton" class="melody-button-style-center"></button>
+      <button id="solButton" class="melody-button-style"></button>
+      <button id="laButton" class="melody-button-style-penultimate"></button>
+      <button id="siButton" class="melody-button-style-last"></button>
+    </div>
+  </main>
 
-  <div class="melody-div">
-    <button id="doButton" class="melody-button-style-first"></button>
-    <button id="reButton" class="melody-button-style-second"></button>
-    <button id="miButton" class="melody-button-style"></button>
-    <button id="faButton" class="melody-button-style-center"></button>
-    <button id="solButton" class="melody-button-style"></button>
-    <button id="laButton" class="melody-button-style-penultimate"></button>
-    <button id="siButton" class="melody-button-style-last"></button>
-  </div>
+  <div class="js-back"></div>
+  <div class="config-content js-config"></div>
   
   <script src="script.js"></script>
 </body>

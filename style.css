@@ -1,5 +1,10 @@
 body {
   background-color: black;
+}
+
+body, .main-style {
+  
+  color: white;
 
   display: flex;
   flex-direction: column;
@@ -13,6 +18,23 @@ body {
 .pads-div-1, .pads-div-2 {
   display: flex;
   gap: 10px;
+}
+
+.config-button {
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 25px;
+
+  border: none;
+  color: gray;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.config-button:hover {
+  color: lightslategray;
 }
 
 .pad-style-1, .pad-style-2,
