@@ -152,7 +152,7 @@ function backMain() {
 <div class="config-content js-config"></div>
   `;
 
-  // Reattach event listeners to the buttons
+  // Reattach event listeners 
   const buttons = document.querySelectorAll('button');
   buttons.forEach((button) => {
     button.addEventListener('click', playSound);
