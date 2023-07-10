@@ -33,13 +33,13 @@ body, .main-style {
   cursor: pointer;
 }
 
-.back-button-div {
- 
+
+.lightmode-buttons {
+  background-color: rgb(40, 40, 43);
 }
 
-.back-button-style {
-  
-
+.config-button {
+  background-color: transparent;
 }
 
 .config-button:hover, .back-button-style:hover {
@@ -151,3 +151,5 @@ body, .main-style {
 .config-content {
   margin-bottom: 0px;
 }
+
+
