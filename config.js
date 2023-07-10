@@ -73,6 +73,7 @@ function backMain() {
   if (document.body.style.backgroundColor === 'lightgray') {
     buttons.forEach((button) => {
       button.classList.add('lightmode-buttons')
+      button.classList.add('lightmode-hover-buttons')
     })
   };
   

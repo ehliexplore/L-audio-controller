@@ -63,7 +63,12 @@ document.addEventListener('keydown', function(event) {
     const button = document.getElementById(buttonId);
     if (button) {
       // Add a class to the button when pressed
-      button.classList.add(`active-${buttonId}`);
+      if (document.body.style.backgroundColor === 'lightgray') {
+        button.classList.add(`lightmode-active-${buttonId}`);
+      } else {
+        button.classList.add(`active-${buttonId}`);
+      }
+      
 
       // Trigger button click event
       button.click();
@@ -80,6 +85,7 @@ document.addEventListener('keyup', function(event) {
     if (button) {
       // Remove the class from the button whe released
       button.classList.remove(`active-${buttonId}`);
+      button.classList.remove(`lightmode-active-${buttonId}`);
     }
   }
 });

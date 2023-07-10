@@ -38,9 +38,7 @@ body, .main-style {
   background-color: rgb(40, 40, 43);
 }
 
-.config-button {
-  background-color: transparent;
-}
+
 
 .config-button:hover, .back-button-style:hover {
   color: white;
@@ -88,6 +86,31 @@ body, .main-style {
   background-color: gray;
 }
 
+.melody-button-style:hover, 
+.melody-button-style-first:hover,
+.melody-button-style-last:hover,
+.melody-button-style-penultimate:hover,
+.melody-button-style-second:hover,
+.melody-button-style-center:hover {
+  background-color: darkred;
+}
+
+
+.lightmode-active-kickButton, .lightmode-active-snareButton,
+.lightmode-active-clapButton, .lightmode-active-hatButton,
+.lightmode-active-openhatButton, .lightmode-active-button808,
+.lightmode-active-congaButton, .lightmode-active-metalshakeButton,
+.lightmode-active-doButton, .lightmode-active-reButton,
+.lightmode-active-miButton, .lightmode-active-faButton,
+.lightmode-active-solButton, .lightmode-active-laButton,
+.lightmode-active-siButton
+  {
+  background-color: white;
+}
+
+.lightmode-hover-buttons:hover {
+  background-color: white;
+}
 
 .melody-div {
   display: flex;
@@ -132,14 +155,7 @@ body, .main-style {
   top: 50px;
 }
 
-.melody-button-style:hover, 
-.melody-button-style-first:hover,
-.melody-button-style-last:hover,
-.melody-button-style-penultimate:hover,
-.melody-button-style-second:hover,
-.melody-button-style-center:hover {
-  background-color: darkred;
-}
+
 
 .active-doButton, .active-reButton,
 .active-miButton, .active-faButton,
@@ -152,4 +168,11 @@ body, .main-style {
   margin-bottom: 0px;
 }
 
+.config-button {
+  background-color: transparent;
+}
 
+.config-button:hover {
+  background-color: transparent;
+  color: white;
+}
