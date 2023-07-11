@@ -5,10 +5,10 @@ function showConfig() {
 
   if (document.body.style.backgroundColor === 'lightgray') {
     document.querySelector('.js-config').innerHTML = `
-    <button class="change-theme" onclick="changeTheme()">Dark theme</button>`;
+    <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
   } else {
     document.querySelector('.js-config').innerHTML = `
-    <button class="change-theme" onclick="changeTheme()">Light theme</button>`;
+    <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
   }
 
 };
@@ -21,12 +21,12 @@ function changeTheme() {
   if (document.body.style.backgroundColor === 'lightgray') {
     document.body.style.backgroundColor = 'black';
     document.querySelector('.js-config').innerHTML = `
-    <button onclick="changeTheme()">Light theme</button>`;
+    <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
     
   } else {
     document.body.style.backgroundColor = 'lightgray';
     document.querySelector('.js-config').innerHTML = `
-    <button onclick="changeTheme()">Dark theme</button>`;
+    <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
     
   }
 };
