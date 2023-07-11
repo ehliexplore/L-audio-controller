@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: Arial;
 }
 
 body, .main-style {
@@ -156,16 +157,11 @@ body, .main-style {
 }
 
 
-
 .active-doButton, .active-reButton,
 .active-miButton, .active-faButton,
 .active-solButton, .active-laButton,
 .active-siButton {
   background-color: darkred;
-}
-
-.config-content {
-  margin-bottom: 0px;
 }
 
 .config-button {
@@ -175,28 +171,4 @@ body, .main-style {
 .config-button:hover {
   background-color: transparent;
   color: white;
-}
-
-.dark-theme-button, .light-theme-button {
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.dark-theme-button {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
-.light-theme-button {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-}
-
-.done-button-style {
-  padding-left: 33px;
-  padding-right: 33px;
-  border: none;
 }
