@@ -1,25 +1,25 @@
 const soundMap = {
   // pads line 1
-  kickButton: 'kick.mp3',
-  snareButton: 'snare.mp3',
-  hatButton: 'hat.mp3',
-  openhatButton: 'openhat.mp3',
+  kickButton: 'preset1-kick.mp3',
+  snareButton: 'preset1-snare.mp3',
+  hatButton: 'preset1-hat.mp3',
+  openhatButton: 'preset1-openhat.mp3',
 
   // pads line 2
-  button808: '808.mp3',
-  clapButton: 'clap.mp3',
-  congaButton: 'conga.mp3',
-  metalshakeButton: 'metal-shake.mp3',
+  button808: 'preset1-808.mp3',
+  clapButton: 'preset1-clap.mp3',
+  congaButton: 'preset1-conga.mp3',
+  metalshakeButton: 'preset1-metal-shake.mp3',
 
   // melody 
-  doButton: 'c.mp3',
-  reButton: 'd.mp3',
-  miButton: 'e.mp3',
-  faButton: 'f.mp3',
-  solButton: 'g.mp3',
-  laButton: 'a.mp3',
-  siButton: 'b.mp3'
-}
+  doButton: 'preset1-c.mp3',
+  reButton: 'preset1-d.mp3',
+  miButton: 'preset1-e.mp3',
+  faButton: 'preset1-f.mp3',
+  solButton: 'preset1-g.mp3',
+  laButton: 'preset1-a.mp3',
+  siButton: 'preset1-b.mp3'
+};
 
 const keyMap = {
   // pads line 1 
@@ -42,7 +42,7 @@ const keyMap = {
   'b': 'solButton',
   'n': 'laButton',
   'm': 'siButton'
-}
+};
 
 function playSound(event) {
   const buttonId = event.target.id;
@@ -52,7 +52,7 @@ function playSound(event) {
     const audio = new Audio(soundFile);
     audio.play();
   }
-}
+};
 
 // Event listener for keydown event
 document.addEventListener('keydown', function(event) {
