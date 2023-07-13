@@ -1,25 +1,26 @@
 const soundMap = {
   // pads line 1
-  kickButton: 'preset1-kick.mp3',
-  snareButton: 'preset1-snare.mp3',
-  hatButton: 'preset1-hat.mp3',
-  openhatButton: 'preset1-openhat.mp3',
+  kickButton: 'audio-files/preset1-kick.mp3',
+  snareButton: 'audio-files/preset1-snare.mp3',
+  hatButton: 'audio-files/preset1-hat.mp3',
+  openhatButton: 'audio-files/preset1-openhat.mp3',
 
   // pads line 2
-  button808: 'preset1-808.mp3',
-  clapButton: 'preset1-clap.mp3',
-  congaButton: 'preset1-conga.mp3',
-  metalshakeButton: 'preset1-metal-shake.mp3',
+  button808: 'audio-files/preset1-808.mp3',
+  clapButton: 'audio-files/preset1-clap.mp3',
+  congaButton: 'audio-files/preset1-conga.mp3',
+  metalshakeButton: 'audio-files/preset1-metal-shake.mp3',
 
   // melody 
-  doButton: 'preset1-c.mp3',
-  reButton: 'preset1-d.mp3',
-  miButton: 'preset1-e.mp3',
-  faButton: 'preset1-f.mp3',
-  solButton: 'preset1-g.mp3',
-  laButton: 'preset1-a.mp3',
-  siButton: 'preset1-b.mp3'
+  doButton: 'audio-files/preset1-c.mp3',
+  reButton: 'audio-files/preset1-d.mp3',
+  miButton: 'audio-files/preset1-e.mp3',
+  faButton: 'audio-files/preset1-f.mp3',
+  solButton: 'audio-files/preset1-g.mp3',
+  laButton: 'audio-files/preset1-a.mp3',
+  siButton: 'audio-files/preset1-b.mp3'
 };
+
 
 const keyMap = {
   // pads line 1 
@@ -95,10 +96,3 @@ const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
   button.addEventListener('click', playSound);
 });
-
-
-// config
-
-
-
-
