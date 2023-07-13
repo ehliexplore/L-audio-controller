@@ -36,7 +36,7 @@ function selectPreset1() {
   };
 
   updateSoundFiles(presetSounds);
-}
+};
 
 function selectPreset2() {
   const presetSounds = {
@@ -58,8 +58,7 @@ function selectPreset2() {
   };
 
   updateSoundFiles(presetSounds);
-}
-
+};
 
 function updateSoundFiles(presetSounds) {
   for (const buttonId in presetSounds) {
