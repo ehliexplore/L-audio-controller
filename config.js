@@ -1,3 +1,5 @@
+let selectedPreset = null;
+
 function showConfig() {
   cleanMain();
 
@@ -12,11 +14,17 @@ function showConfig() {
     <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
   }
 
-  document.querySelector('.js-presets-buttons').innerHTML = '<button class="preset-1-button" onclick="selectPreset1()">Preset 1</button> <button class="preset-2-button" onclick="selectPreset2()">Preset 2</button>';
+  document.querySelector('.js-presets-buttons').innerHTML = '<button id="preset-1" class="preset-1-button" onclick="selectPreset1()">Preset 1</button> <button id="preset-2" class="preset-2-button" onclick="selectPreset2()">Preset 2</button>';
 };
 
 
 function selectPreset1() {
+    
+  document.getElementById('preset-1').classList.add('preset-1-button-clicked');
+  document.getElementById('preset-2').classList.remove('preset-2-button-clicked');
+  selectedPreset = 'preset1';
+
+
   const presetSounds = {
     kickButton: 'audio-files/preset1-kick.mp3',
     snareButton: 'audio-files/preset1-snare.mp3',
@@ -39,6 +47,12 @@ function selectPreset1() {
 };
 
 function selectPreset2() {
+
+  document.getElementById('preset-2').classList.add('preset-2-button-clicked');
+  document.getElementById('preset-1').classList.remove('preset-1-button-clicked');
+  selectedPreset = 'preset2';
+
+
   const presetSounds = {
     kickButton: 'audio-files/preset2-kick.mp3',
     snareButton: 'audio-files/preset2-snare.mp3',
