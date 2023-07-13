@@ -1,8 +1,8 @@
-# audio-controller
-L Audio
+# L audio-controller
 
 L Audio is a simple web application that allows users to play different sound samples by clicking on buttons or using keyboard shortcuts. The application provides a customizable interface where users can change the theme, select presets to change the sound files, and play their own melodies.
-Features
+
+Features:
 
     Play sound samples by clicking on buttons or using keyboard shortcuts.
     Customize the interface theme between light and dark modes.
