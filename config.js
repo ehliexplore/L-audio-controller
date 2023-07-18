@@ -164,3 +164,35 @@ function backMain() {
     button.addEventListener('click', playSound);
   });
 }
+
+function loadTheme() {
+  if (theme === 'dark') {
+    document.body.style.backgroundColor = 'black';
+    for (let i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.backgroundColor = 'lightgray';
+    }
+
+  } else {
+    document.body.style.backgroundColor = 'lightgray';
+    for (let i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
+    }
+  }
+}
+
+loadTheme();function loadTheme() {
+  if (theme === 'dark') {
+    document.body.style.backgroundColor = 'black';
+    for (let i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.backgroundColor = 'lightgray';
+    }
+
+  } else {
+    document.body.style.backgroundColor = 'lightgray';
+    for (let i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
+    }
+  }
+}
+
+loadTheme();
