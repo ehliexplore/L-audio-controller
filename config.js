@@ -103,12 +103,18 @@ function changeTheme() {
     document.body.style.backgroundColor = 'black';
     document.querySelector('.js-config').innerHTML = `
     <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
+    for (let i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.backgroundColor = 'white';
+    }
     localStorage.setItem('theme', 'dark');
     
   } else {
     document.body.style.backgroundColor = 'lightgray';
     document.querySelector('.js-config').innerHTML = `
     <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
+    for (let i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
+    }
     localStorage.setItem('theme', 'light');
   }
 }
@@ -153,14 +159,6 @@ function backMain() {
 
   // Reattach event listeners 
   const buttons = document.querySelectorAll('button');
-
-  if (theme === 'light') {
-    buttons.forEach((button) => {
-      button.classList.add('lightmode-buttons')
-      button.classList.add('lightmode-hover-buttons')
-    })
-  };
-  
   
   buttons.forEach((button) => {
     button.addEventListener('click', playSound);

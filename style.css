@@ -113,6 +113,10 @@ body, .main-style {
   background-color: white;
 }
 
+.darkmode-hover-buttons:hover {
+  background-color: brown;
+}
+
 .melody-div {
   display: flex;
   gap: 100px;
