@@ -1,5 +1,6 @@
 let selectedPreset = localStorage.getItem('selectedPreset');
 
+
 function showConfig() {
   cleanMain();
 
@@ -102,13 +103,15 @@ function changeTheme() {
     document.body.style.backgroundColor = 'black';
     document.querySelector('.js-config').innerHTML = `
     <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
+    localStorage.setItem('theme', 'dark');
     
   } else {
     document.body.style.backgroundColor = 'lightgray';
     document.querySelector('.js-config').innerHTML = `
     <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
+    localStorage.setItem('theme', 'light');
   }
-};
+}
 
 function backMain() { 
   document.querySelector('.js-config').innerHTML = '';

@@ -1,3 +1,15 @@
+theme = localStorage.getItem('theme') || 'dark';
+
+function loadTheme() {
+  if (theme === 'dark') {
+    document.body.style.backgroundColor = 'black';
+  } else if (theme === 'light') {
+    document.body.style.backgroundColor = 'lightgray';
+  }
+}
+
+loadTheme();
+
 const soundMap = {
   // pads line 1
   kickButton: 'audio-files/preset1-kick.mp3',
