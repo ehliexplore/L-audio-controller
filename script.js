@@ -6,7 +6,7 @@ function loadTheme() {
   if (theme === 'dark') {
     document.body.style.backgroundColor = 'black';
     for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'white';
+      allButtons[i].style.backgroundColor = 'lightgray';
     }
 
   } else {
@@ -86,7 +86,7 @@ document.addEventListener('keydown', function(event) {
     const button = document.getElementById(buttonId);
     if (button) {
       // Add a class to the button when pressed
-      if (document.body.style.backgroundColor === 'lightgray') {
+      if (theme === 'light') {
         button.classList.add(`lightmode-active-${buttonId}`);
       } else {
         button.classList.add(`active-${buttonId}`);
