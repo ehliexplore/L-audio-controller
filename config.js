@@ -154,7 +154,7 @@ function backMain() {
   // Reattach event listeners 
   const buttons = document.querySelectorAll('button');
 
-  if (document.body.style.backgroundColor === 'lightgray') {
+  if (theme === 'light') {
     buttons.forEach((button) => {
       button.classList.add('lightmode-buttons')
       button.classList.add('lightmode-hover-buttons')
