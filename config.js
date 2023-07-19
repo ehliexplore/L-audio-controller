@@ -165,32 +165,24 @@ function backMain() {
   });
 }
 
+
+let allButtons = document.getElementsByTagName('button');
+
 function loadTheme() {
   if (theme === 'dark') {
     document.body.style.backgroundColor = 'black';
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'lightgray';
+      allButtons.classList.remove('lightmode-hover-buttons');
+      allButtons.classList.add(`pad-style-${i}`);
     }
 
   } else {
     document.body.style.backgroundColor = 'lightgray';
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
-    }
-  }
-}
-
-loadTheme();function loadTheme() {
-  if (theme === 'dark') {
-    document.body.style.backgroundColor = 'black';
-    for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'lightgray';
-    }
-
-  } else {
-    document.body.style.backgroundColor = 'lightgray';
-    for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
+      allButtons.classList.remove(`pad-style-${i}`);
+      allButtons.classList.add('lightmode-hover-buttons');
     }
   }
 }

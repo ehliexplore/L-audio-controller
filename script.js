@@ -1,5 +1,4 @@
 theme = localStorage.getItem('theme') || 'dark';
-let allButtons = document.getElementsByTagName('button');
 
 
 
