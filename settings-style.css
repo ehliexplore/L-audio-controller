@@ -36,13 +36,15 @@
 
 }
 
+.preset-2-button-clicked {
+  background-color: blue;
+  color: white;
+}
+
 .preset-1-button-clicked {
   background-color: blue;
   color: white;
 }
 
-.preset-2-button-clicked {
-  background-color: blue;
-  color: white;
-}
+
 

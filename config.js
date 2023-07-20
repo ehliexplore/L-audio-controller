@@ -1,7 +1,8 @@
-let selectedPreset = localStorage.getItem('selectedPreset');
+
 
 
 function showConfig() {
+
   cleanMain();
 
   const doneButton = document.querySelector('.js-done').innerHTML = '<button class="done-button-style" onclick="backMain()">Done</button>';
@@ -28,11 +29,8 @@ function showConfig() {
 
 
 function selectPreset1() {
-    
   document.getElementById('preset-1').classList.add('preset-1-button-clicked');
   document.getElementById('preset-2').classList.remove('preset-2-button-clicked');
-  selectedPreset = 'preset1';
-  localStorage.setItem('selectedPreset', selectedPreset);
 
 
   const presetSounds = {
@@ -54,14 +52,13 @@ function selectPreset1() {
   };
 
   updateSoundFiles(presetSounds);
-};
+  localStorage.setItem('selectedPreset', 'preset1');
+}
+
 
 function selectPreset2() {
-
   document.getElementById('preset-2').classList.add('preset-2-button-clicked');
-  document.getElementById('preset-1').classList.remove('preset-1-button-clicked');
-  selectedPreset = 'preset2';
-  localStorage.setItem('selectedPreset', selectedPreset);
+  document.getElementById('preset-1').classList.remove('preset-1-button-clicked'); 
 
 
   const presetSounds = {
@@ -83,7 +80,8 @@ function selectPreset2() {
   };
 
   updateSoundFiles(presetSounds);
-};
+  localStorage.setItem('selectedPreset', 'preset2');
+}
 
 function updateSoundFiles(presetSounds) {
   for (const buttonId in presetSounds) {
@@ -104,20 +102,18 @@ function changeTheme() {
     document.querySelector('.js-config').innerHTML = `
     <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
     for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'white';
+      allButtons[i].style.backgroundColor = 'lightgray';
     }
     showConfig();
-    localStorage.setItem('theme', JSON.stringify('dark'));
+    localStorage.setItem('theme', 'dark');
     
   } else {
     document.body.style.backgroundColor = 'gold';
     document.querySelector('.js-config').innerHTML = `
     <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
-    for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
-    }
+    
     showConfig();
-    localStorage.setItem('theme', JSON.stringify('gold'));
+    localStorage.setItem('theme', 'gold');
   }
 }
 
@@ -177,9 +173,7 @@ function loadTheme() {
   if (theme === 'dark') {
     document.body.style.backgroundColor = 'black';
     for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'lightgray';
       document.querySelector('.config-button').style.backgroundColor = 'transparent';
-      allButtons.classList.remove('lightmode-hover-buttons');
       allButtons.classList.add(`pad-style-${i}`);
     }
     showConfig()
