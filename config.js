@@ -107,7 +107,7 @@ function changeTheme() {
       allButtons[i].style.backgroundColor = 'white';
     }
     showConfig();
-    localStorage.setItem('theme', 'dark');
+    localStorage.setItem('theme', JSON.stringify('dark'));
     
   } else {
     document.body.style.backgroundColor = 'lightgray';
@@ -117,7 +117,7 @@ function changeTheme() {
       allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
     }
     showConfig();
-    localStorage.setItem('theme', 'light');
+    localStorage.setItem('theme', JSON.stringify('light'));
   }
 }
 
@@ -188,10 +188,11 @@ function loadTheme() {
   } else {
     document.body.style.backgroundColor = 'lightgray';
     for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
+      allButtons[i].style.backgroundColor = 'black';
       document.querySelector('.config-button').style.backgroundColor = 'transparent';
       allButtons.classList.remove(`pad-style-${i}`);
       allButtons.classList.add('lightmode-hover-buttons');
+    
     }
     showConfig();
 

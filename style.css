@@ -96,7 +96,7 @@ body, .main-style {
   background-color: darkred;
 }
 
-
+/*
 .lightmode-active-kickButton, .lightmode-active-snareButton,
 .lightmode-active-clapButton, .lightmode-active-hatButton,
 .lightmode-active-openhatButton, .lightmode-active-button808,
@@ -106,8 +106,9 @@ body, .main-style {
 .lightmode-active-solButton, .lightmode-active-laButton,
 .lightmode-active-siButton
   {
-  background-color: white;
+  background-color: red;
 }
+*/
 
 .lightmode-hover-buttons:hover {
   background-color: white;
@@ -175,4 +176,8 @@ body, .main-style {
 .config-button:hover {
   background-color: transparent;
   color: white;
+}
+
+.light-buttons-color {
+  background-color: rgb(32, 30, 30);
 }
