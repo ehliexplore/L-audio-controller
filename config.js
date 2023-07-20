@@ -7,12 +7,12 @@ function showConfig() {
   const doneButton = document.querySelector('.js-done').innerHTML = '<button class="done-button-style" onclick="backMain()">Done</button>';
 
 
-  if (document.body.style.backgroundColor === 'lightgray') {
+  if (document.body.style.backgroundColor === 'gold') {
     document.querySelector('.js-config').innerHTML = `
     <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
   } else {
     document.querySelector('.js-config').innerHTML = `
-    <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
+    <button class="gold-theme-button" onclick="changeTheme()">Gold theme</button>`;
   }
 
   document.querySelector('.js-presets-buttons').innerHTML = '<button id="preset-1" class="preset-1-button" onclick="selectPreset1()">Preset 1</button> <button id="preset-2" class="preset-2-button" onclick="selectPreset2()">Preset 2</button>';
@@ -99,7 +99,7 @@ function cleanMain() {
 };
 
 function changeTheme() {
-  if (document.body.style.backgroundColor === 'lightgray') {
+  if (document.body.style.backgroundColor === 'gold') {
     document.body.style.backgroundColor = 'black';
     document.querySelector('.js-config').innerHTML = `
     <button class="light-theme-button" onclick="changeTheme()">Light theme</button>`;
@@ -110,14 +110,14 @@ function changeTheme() {
     localStorage.setItem('theme', JSON.stringify('dark'));
     
   } else {
-    document.body.style.backgroundColor = 'lightgray';
+    document.body.style.backgroundColor = 'gold';
     document.querySelector('.js-config').innerHTML = `
     <button class="dark-theme-button" onclick="changeTheme()">Dark theme</button>`;
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
     }
     showConfig();
-    localStorage.setItem('theme', JSON.stringify('light'));
+    localStorage.setItem('theme', JSON.stringify('gold'));
   }
 }
 
@@ -186,13 +186,10 @@ function loadTheme() {
   
 
   } else {
-    document.body.style.backgroundColor = 'lightgray';
+    document.body.style.backgroundColor = 'gold';
     for (let i = 0; i < allButtons.length; i++) {
-      allButtons[i].style.backgroundColor = 'black';
       document.querySelector('.config-button').style.backgroundColor = 'transparent';
       allButtons.classList.remove(`pad-style-${i}`);
-      allButtons.classList.add('lightmode-hover-buttons');
-    
     }
     showConfig();
 

@@ -110,9 +110,7 @@ body, .main-style {
 }
 */
 
-.lightmode-hover-buttons:hover {
-  background-color: white;
-}
+
 
 .darkmode-hover-buttons:hover {
   background-color: brown;

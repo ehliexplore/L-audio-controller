@@ -1,6 +1,6 @@
 
 
-.dark-theme-button, .light-theme-button {
+.dark-theme-button, .gold-theme-button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -13,8 +13,8 @@
   font-weight: bold;
 }
 
-.light-theme-button {
-  background-color: white;
+.gold-theme-button {
+  background-color: gold;
   color: black;
   font-weight: bold;
 }
@@ -45,3 +45,4 @@
   background-color: blue;
   color: white;
 }
+
