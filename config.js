@@ -106,6 +106,7 @@ function changeTheme() {
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'white';
     }
+    showConfig();
     localStorage.setItem('theme', 'dark');
     
   } else {
@@ -115,6 +116,7 @@ function changeTheme() {
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
     }
+    showConfig();
     localStorage.setItem('theme', 'light');
   }
 }
@@ -157,33 +159,42 @@ function backMain() {
   <div class="config-content js-config"></div>
   `;
 
+
   // Reattach event listeners 
   const buttons = document.querySelectorAll('button');
   
   buttons.forEach((button) => {
     button.addEventListener('click', playSound);
   });
+
 }
 
 
 let allButtons = document.getElementsByTagName('button');
+
 
 function loadTheme() {
   if (theme === 'dark') {
     document.body.style.backgroundColor = 'black';
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'lightgray';
+      document.querySelector('.config-button').style.backgroundColor = 'transparent';
       allButtons.classList.remove('lightmode-hover-buttons');
       allButtons.classList.add(`pad-style-${i}`);
     }
+    showConfig()
+  
 
   } else {
     document.body.style.backgroundColor = 'lightgray';
     for (let i = 0; i < allButtons.length; i++) {
       allButtons[i].style.backgroundColor = 'rgb(40, 40, 40)';
+      document.querySelector('.config-button').style.backgroundColor = 'transparent';
       allButtons.classList.remove(`pad-style-${i}`);
       allButtons.classList.add('lightmode-hover-buttons');
     }
+    showConfig();
+
   }
 }
 

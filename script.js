@@ -1,9 +1,5 @@
 theme = localStorage.getItem('theme') || 'dark';
 
-
-
-
-
 const soundMap = {
   // pads line 1
   kickButton: 'audio-files/preset1-kick.mp3',
