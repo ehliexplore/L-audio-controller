@@ -1,5 +1,8 @@
-let theme = localStorage.getItem('theme') || 'dark';
+let theme = localStorage.getItem('theme') || 'gold';
 let selectedPreset = localStorage.getItem('selectedPreset') || 'preset1';
+
+console.log(selectedPreset);
+console.log(theme);
 
 
 const soundMap = {
@@ -67,13 +70,8 @@ document.addEventListener('keydown', function(event) {
   if (buttonId) {
     const button = document.getElementById(buttonId);
     if (button) {
-      // Add a class to the button when pressed
-      if (theme === 'light') {
-        button.classList.add(`lightmode-active-${buttonId}`);
-      } else {
-        button.classList.add(`active-${buttonId}`);
-      }
-      
+    // Add a class to the button 
+      button.classList.add(`active-${buttonId}`);
 
       // Trigger button click event
       button.click();
@@ -100,3 +98,4 @@ const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
   button.addEventListener('click', playSound);
 });
+
