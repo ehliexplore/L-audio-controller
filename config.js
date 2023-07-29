@@ -1,6 +1,3 @@
-
-
-
 function showConfig() {
 
   cleanMain();
@@ -19,13 +16,15 @@ function showConfig() {
   document.querySelector('.js-presets-buttons').innerHTML = '<button id="preset-1" class="preset-1-button" onclick="selectPreset1()">Preset 1</button> <button id="preset-2" class="preset-2-button" onclick="selectPreset2()">Preset 2</button>';
 
   if (selectedPreset === 'preset1') { 
-    document.getElementById('preset-1').classList.add('preset-1-button-clicked');
     document.getElementById('preset-2').classList.remove('preset-2-button-clicked');
+    document.getElementById('preset-1').classList.add('preset-1-button-clicked');
+
   } else if (selectedPreset === 'preset2') {
-    document.getElementById('preset-2').classList.add('preset-2-button-clicked');
     document.getElementById('preset-1').classList.remove('preset-1-button-clicked');
+    document.getElementById('preset-2').classList.add('preset-2-button-clicked');
+
   }
-};
+}
 
 
 function selectPreset1() {
@@ -200,4 +199,3 @@ if (selectedPreset === 'preset1') {
 } else if (selectedPreset === 'preset2') {
   selectPreset2();
 }
-
