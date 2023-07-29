@@ -1,4 +1,8 @@
+selectedPreset = localStorage.getItem('selectedPreset')
+
 function showConfig() {
+  
+  console.log(selectedPreset)
 
   cleanMain();
 
@@ -52,6 +56,8 @@ function selectPreset1() {
 
   updateSoundFiles(presetSounds);
   localStorage.setItem('selectedPreset', 'preset1');
+  selectedPreset = localStorage.getItem('selectedPreset')
+  console.log(selectedPreset);
 }
 
 
@@ -80,6 +86,8 @@ function selectPreset2() {
 
   updateSoundFiles(presetSounds);
   localStorage.setItem('selectedPreset', 'preset2');
+  selectedPreset = localStorage.getItem('selectedPreset')
+  console.log(selectedPreset)
 }
 
 function updateSoundFiles(presetSounds) {
