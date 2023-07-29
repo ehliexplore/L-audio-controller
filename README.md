@@ -5,6 +5,7 @@ L Audio é uma aplicação web simples que permite aos usuários reproduzir dife
 Comandos do teclado:
 
 Bateria: Q, W, A, S, P, O, L, K
+
 Melodia: Z, X, C, V, B, N, M
 
 ________________________________________________________________________________________________________________________________
@@ -14,4 +15,5 @@ L Audio is a simple web application that allows users to play different sound sa
 Keyboard commands:
 
 Drums: Q, W, A, S, P, O, L, K
+
 Melody: Z, X, C, V, B, N, M
