@@ -1,6 +1,7 @@
 let theme = localStorage.getItem('theme') || 'dark';
 let selectedPreset = localStorage.getItem('selectedPreset') || 'preset1';
 const currentHour = new Date().getHours();
+theme = currentHour > 7 && currentHour < 18 ? "gold" : "dark";
 
 
 
