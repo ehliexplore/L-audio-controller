@@ -1,5 +1,7 @@
-let theme = localStorage.getItem('theme') || 'gold';
-let selectedPreset = localStorage.getItem('selectedPreset') || 'preset2';
+let theme = localStorage.getItem('theme') || 'dark';
+let selectedPreset = localStorage.getItem('selectedPreset') || 'preset1';
+const currentHour = new Date().getHours();
+
 
 
 console.log(selectedPreset);
