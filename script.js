@@ -1,5 +1,6 @@
 let theme = localStorage.getItem('theme') || 'gold';
-let selectedPreset = localStorage.getItem('selectedPreset') || 'preset1';
+let selectedPreset = localStorage.getItem('selectedPreset') || 'preset2';
+
 
 console.log(selectedPreset);
 console.log(theme);
