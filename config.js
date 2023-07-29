@@ -1,5 +1,3 @@
-selectedPreset = localStorage.getItem('selectedPreset')
-
 function showConfig() {
   
   console.log(selectedPreset)
